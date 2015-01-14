@@ -1,0 +1,10 @@
+#cloud-config
+
+hostname: de45-hg_01
+
+users:
+  - name: z3cka
+    coreos-ssh-import-github: z3cka
+    groups:
+      - sudo
+      - docker
